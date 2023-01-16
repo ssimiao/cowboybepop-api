@@ -1,0 +1,13 @@
+package com.cowboybepop;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CowboybepopApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
