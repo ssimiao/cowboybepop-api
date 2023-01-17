@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cowboybepop.http.HttpTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-17T19:59:03" hostname="C-3PO" time="1.33">
+<testsuite name="com.cowboybepop.http.HttpTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-17T20:31:22" hostname="C-3PO" time="0.783">
   <properties/>
-  <testcase name="shouldReturnStatusCode200WithInfoInBody()" classname="com.cowboybepop.http.HttpTest" time="1.33"/>
-  <system-out><![CDATA[16:58:39.860 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [HttpTest]: using SpringBootContextLoader
-16:58:39.877 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.cowboybepop.http.HttpTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:58:39.879 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cowboybepop.http.HttpTest]: HttpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:58:40.067 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [HttpTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-16:58:40.467 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/samuel/Downloads/cowboybepop-api/app/build/classes/java/main/com/cowboybepop/CowboyBepopApplication.class]
-16:58:40.471 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cowboybepop.CowboyBepopApplication for test class com.cowboybepop.http.HttpTest
-16:58:40.905 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [HttpTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-16:58:40.909 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [HttpTest], class annotated with @DirtiesContext [false] with mode [null]
+  <testcase name="shouldReturnStatusCode200WithInfoInBody()" classname="com.cowboybepop.http.HttpTest" time="0.783"/>
+  <system-out><![CDATA[17:31:12.742 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [HttpTest]: using SpringBootContextLoader
+17:31:12.757 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.cowboybepop.http.HttpTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:31:12.760 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.cowboybepop.http.HttpTest]: HttpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:31:12.862 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [HttpTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:31:13.043 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/samuel/Downloads/cowboybepop-api/app/build/classes/java/main/com/cowboybepop/CowboyBepopApplication.class]
+17:31:13.047 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.cowboybepop.CowboyBepopApplication for test class com.cowboybepop.http.HttpTest
+17:31:13.313 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [HttpTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:31:13.317 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [HttpTest], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -19,41 +19,41 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-01-17T16:58:42.350-03:00  INFO 25557 --- [    Test worker] com.cowboybepop.http.HttpTest            : Starting HttpTest using Java 17.0.4.1 with PID 25557 (started by samuel in /home/samuel/Downloads/cowboybepop-api/app)
-2023-01-17T16:58:42.355-03:00  INFO 25557 --- [    Test worker] com.cowboybepop.http.HttpTest            : No active profile set, falling back to 1 default profile: "default"
-2023-01-17T16:58:46.759-03:00  INFO 25557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-17T16:58:46.894-03:00  INFO 25557 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 0 JPA repository interfaces.
-2023-01-17T16:58:50.117-03:00  INFO 25557 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
-2023-01-17T16:58:50.118-03:00  INFO 25557 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
-2023-01-17T16:58:50.118-03:00  INFO 25557 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-01-17T16:58:50.135-03:00  INFO 25557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-17T16:58:51.261-03:00  INFO 25557 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d2e759d1-a987-45dc-a255-3021e78fcae7 user=SA
-2023-01-17T16:58:51.265-03:00  INFO 25557 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-17T16:58:51.311-03:00  INFO 25557 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:d2e759d1-a987-45dc-a255-3021e78fcae7 (H2 2.1)
-2023-01-17T16:58:51.482-03:00  INFO 25557 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.014s)
-2023-01-17T16:58:51.483-03:00  WARN 25557 --- [    Test worker] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
-2023-01-17T16:58:51.497-03:00  INFO 25557 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
-2023-01-17T16:58:51.605-03:00  INFO 25557 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
-2023-01-17T16:58:51.609-03:00  INFO 25557 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2023-01-17T16:58:52.392-03:00  INFO 25557 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-01-17T16:58:52.968-03:00  INFO 25557 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-01-17T16:58:53.658-03:00  WARN 25557 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-01-17T16:58:54.504-03:00  INFO 25557 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-01-17T16:58:57.334-03:00  INFO 25557 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-17T16:58:57.372-03:00  INFO 25557 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-17T16:58:57.664-03:00  WARN 25557 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-17T16:58:57.846-03:00  WARN 25557 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-01-17T17:31:14.186-03:00  INFO 28458 --- [    Test worker] com.cowboybepop.http.HttpTest            : Starting HttpTest using Java 17.0.4.1 with PID 28458 (started by samuel in /home/samuel/Downloads/cowboybepop-api/app)
+2023-01-17T17:31:14.192-03:00  INFO 28458 --- [    Test worker] com.cowboybepop.http.HttpTest            : No active profile set, falling back to 1 default profile: "default"
+2023-01-17T17:31:16.308-03:00  INFO 28458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-17T17:31:16.359-03:00  INFO 28458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
+2023-01-17T17:31:17.327-03:00  INFO 28458 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-01-17T17:31:17.328-03:00  INFO 28458 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-01-17T17:31:17.329-03:00  INFO 28458 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-01-17T17:31:17.345-03:00  INFO 28458 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-17T17:31:17.747-03:00  INFO 28458 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e9039a5f-a616-44d6-9372-f4ba41fb4846 user=SA
+2023-01-17T17:31:17.751-03:00  INFO 28458 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-17T17:31:17.779-03:00  INFO 28458 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:e9039a5f-a616-44d6-9372-f4ba41fb4846 (H2 2.1)
+2023-01-17T17:31:17.903-03:00  INFO 28458 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.012s)
+2023-01-17T17:31:17.904-03:00  WARN 28458 --- [    Test worker] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2023-01-17T17:31:17.919-03:00  INFO 28458 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-01-17T17:31:18.011-03:00  INFO 28458 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2023-01-17T17:31:18.015-03:00  INFO 28458 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2023-01-17T17:31:18.266-03:00  INFO 28458 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-17T17:31:18.368-03:00  INFO 28458 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-17T17:31:18.686-03:00  WARN 28458 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-17T17:31:18.950-03:00  INFO 28458 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-17T17:31:20.246-03:00  INFO 28458 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-17T17:31:20.267-03:00  INFO 28458 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-17T17:31:20.413-03:00  WARN 28458 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-17T17:31:20.480-03:00  WARN 28458 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 50a15c16-b72e-4847-af0a-6c6530cf2c3c
+Using generated security password: 3c99f8b4-56cf-4661-bef6-b61e717ff105
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-01-17T16:59:00.497-03:00  INFO 25557 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2023-01-17T16:59:00.682-03:00  INFO 25557 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4be5b9b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ad80cf6, org.springframework.security.web.context.SecurityContextHolderFilter@1360ef8d, org.springframework.security.web.header.HeaderWriterFilter@3efd3302, org.springframework.security.web.csrf.CsrfFilter@5354bfce, org.springframework.security.web.authentication.logout.LogoutFilter@17635531, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@310cc4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e366f0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e212f46, org.springframework.security.web.access.ExceptionTranslationFilter@d43f205, org.springframework.security.web.access.intercept.AuthorizationFilter@141eb85b]
-2023-01-17T16:59:02.454-03:00  INFO 25557 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-01-17T16:59:02.456-03:00  INFO 25557 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-01-17T16:59:02.460-03:00  INFO 25557 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
-2023-01-17T16:59:02.717-03:00  INFO 25557 --- [    Test worker] com.cowboybepop.http.HttpTest            : Started HttpTest in 21.492 seconds (process running for 28.029)
+2023-01-17T17:31:21.489-03:00  INFO 28458 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-01-17T17:31:21.602-03:00  INFO 28458 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46573cfe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ead0b51, org.springframework.security.web.context.SecurityContextHolderFilter@586b78d7, org.springframework.security.web.header.HeaderWriterFilter@1e366f0f, org.springframework.security.web.csrf.CsrfFilter@27bc2650, org.springframework.security.web.authentication.logout.LogoutFilter@504274c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48b01607, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c29f6be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f7d8a7c, org.springframework.security.web.access.ExceptionTranslationFilter@4a1c14a6, org.springframework.security.web.access.intercept.AuthorizationFilter@4daead88]
+2023-01-17T17:31:22.417-03:00  INFO 28458 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-01-17T17:31:22.418-03:00  INFO 28458 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-01-17T17:31:22.423-03:00  INFO 28458 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2023-01-17T17:31:22.599-03:00  INFO 28458 --- [    Test worker] com.cowboybepop.http.HttpTest            : Started HttpTest in 9.182 seconds (process running for 12.187)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
