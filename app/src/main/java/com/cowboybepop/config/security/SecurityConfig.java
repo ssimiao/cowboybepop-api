@@ -19,11 +19,8 @@ public class SecurityConfig {
                         authorizeConfig -> {
                             authorizeConfig.requestMatchers("/actuator/health").permitAll();
                             authorizeConfig.requestMatchers("/actuator").permitAll();
-                            authorizeConfig.requestMatchers(HttpMethod.GET,"//api/v1/**").permitAll();
                             authorizeConfig.requestMatchers(HttpMethod.GET,"/api/v1/**").permitAll();
                             authorizeConfig.requestMatchers(HttpMethod.GET,"/api/**").permitAll();
-                            authorizeConfig.requestMatchers(HttpMethod.GET,"/info").permitAll();
-                            authorizeConfig.requestMatchers(HttpMethod.GET,"//api/**").permitAll();
                         })
                 .build();
     }
