@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
+    - uses: actions/checkout@v3
     - name: Install Java
       run: sudo apt install openjdk-17-jdk
     
