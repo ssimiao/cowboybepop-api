@@ -30,6 +30,7 @@ jobs:
       with:
         arguments: build
         gradle-version: '7.2'
+        build-root-directory: app/
     
     - name: download docker
       run: sudo apt-get install docker-ce docker-ce-cli
