@@ -25,12 +25,15 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    
+    - name: Install Gradle
+      run: sudo apt install gradle
+
+    - name: go to app
+      run: cd app
+
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: build
-        gradle-version: '7.2'
-        build-root-directory: app/
+      run: gradle clean build
     
     - name: download docker
       run: sudo apt-get install docker-ce docker-ce-cli
