@@ -69,7 +69,7 @@ jobs:
       run: sudo apt install docker-ce docker-ce-cli containerd.io -y
     
     - name: publish in docker registry
-      run: docker build -t ssimiao/cowboybepop-api docker/
+      run: docker build -t ssimiao/cowboybepop-api app/
     
     - name: login in docker
       run: echo ${{ secrets.REG_USERNAME }} | docker login --username ${{ secrets.REG_PASSWORD }} --password-stdin
