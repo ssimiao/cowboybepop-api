@@ -72,7 +72,7 @@ jobs:
       run: docker build -t ssimiao/cowboybepop-api app/
     
     - name: login in docker
-      run: docker login --username $REG_USERNAME --password $REG_PASSWORD
+      run: echo ${{ secrets.REG_USERNAME }} | docker login --username ${{ secrets.REG_PASSWORD }} --password-stdin
     
     - name: publish in docker registry
       run: docker push ssimiao/cowboybepop-api
