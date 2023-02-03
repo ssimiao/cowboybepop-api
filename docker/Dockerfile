@@ -2,6 +2,7 @@ FROM gradle:jdk17-alpine AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
+RUN ls
 
 FROM ibm-semeru-runtimes:open-17.0.5_8-jre
 COPY app/build/libs/app-1.0.0.jar app.jar
